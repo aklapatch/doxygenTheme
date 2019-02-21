@@ -16,19 +16,31 @@
     font-weight: 600;
     margin: 0px;
     padding: 2px 0px;
+}
 
+/* title area */
+#titlearea {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 0px solid #5373B4;
 }
 
 h2.groupheader {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #eee;
     color: #000;
     font-size: 150%;
     font-weight: 700;
-    font-family: "Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif;
-    margin-top: 1.75em;
-    padding-top: 8px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+    margin-top: 1em;
+    padding-top: 12px;
     padding-bottom: 4px;
     width: 100%;
+}
+
+/* icon for each data type */
+.icon {
+	background-color: #026ea1;
 }
 
 /* arrows for treenav */
@@ -50,13 +62,13 @@ h2.groupheader {
 
 /* colors and fonts for description pages */
 body, table, div, p, dl {
-    font-family: Roboto,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-weight: normal;
     color: black;
 }
 
 body {
-    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;;
     font-weight: normal;
     color: #404040;
     min-height: 100%;
@@ -93,7 +105,6 @@ body {
 
 /* The main page button */
 .sm-dox > li:first-child > a, .sm-dox > li:first-child > :not(ul) a {
-    color: #FFFFFF;
     padding-right: 12px;
 }
 
@@ -113,7 +124,32 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
     font-weight: 700;
     font-size: 150%;
-    margin: 10px 2px;
+    margin: -2px 0px 0px 2px;
+    background-color: white;
+}
+
+/* title for each section (class List, Class index) */
+#titlearea {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 0px solid #5373B4;   
+}
+
+/* title for each section (class List, Class index) */
+div.headertitle {
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+}
+ /* actual header for each section */
+div.header {
+
+    background-image: url('nav_h.png');
+    background-repeat: repeat-x;
+    background-color: #FFF;
+    margin: 0px;
+    border-bottom: 1px solid #eee;
+
 }
 
 /* for class and function lists */
@@ -139,10 +175,10 @@ table.directory {
 
 /* main page, classes, files banner */
 .sm-dox {
-    padding: 0 5px;
+    padding: 0 0px;
     background-image: url("");
     line-height: 36px;
-	background-color: #2980B9;
+	background-color: #FFF;
 }
 
 /* item list on botton left */
@@ -179,7 +215,7 @@ table.directory {
     background-image: url("");
     background-repeat: no-repeat;
     background-position: right;
-    background-color: #2980B9;
+    background-color: #0094D8;
     color: #b8b8b8;
 
 }
@@ -279,12 +315,10 @@ table.directory {
 /* dividers for class/function lists */
 div.directory {
     margin: 10px 0px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     width: 100%;
 }
-
-
 
 /* for navigation tree links */
 #nav-tree .label a {
@@ -294,7 +328,7 @@ div.directory {
     margin-left: 12px;
     color: #FFF;
     font-weight: 700;
-        font-family: "Lucida Grande", Geneva, Helvetica, Arial, sans-serif;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
 }
 /* hovering over tree view items */
 #nav-tree .label a:hover {
@@ -323,6 +357,7 @@ div.directory {
     font-size: normal;
     overflow: auto;
     background-image: url('');
+    margin-right: 5px;
 }
 
 /* selected nav tree */
@@ -610,6 +645,7 @@ table {
 td {
  vertical-align:top;
  background-color: white;
+ padding-top: 12px;
 }
 .chromeframe {
  margin:.2em 0;
@@ -5055,7 +5091,7 @@ p {
  line-height:24px;
  margin:0;
  font-size:16px;
- margin-bottom:24px
+ margin-bottom:10px
 }
 h1 {
  font-size:175%
@@ -5080,8 +5116,8 @@ hr {
  display:block;
  height:1px;
  border:0;
- border-top:1px solid #e1e4e5;
- margin:24px 0;
+ border-top:1px solid #eee;
+ margin:16px 0;
  padding:0
 }
 code,
@@ -5095,7 +5131,8 @@ code,
  padding:0 5px;
  font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",Courier,monospace;
  color:#E74C3C;
- overflow-x:auto
+ overflow-x:auto;
+ font-weight: 600;
 }
 code.code-large,
 .rst-content tt.code-large {

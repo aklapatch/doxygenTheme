@@ -1,8 +1,6 @@
 
-
 /// \file
 /// This is an example file for this example project.
-
 
 /// An example struct with a couple members
 struct ExampleStruct {
@@ -14,6 +12,19 @@ struct ExampleStruct {
 	/// Sets both members to zero
 	ExampleStruct() : IntMember(0), DoubleMember(0.0) { }
 };
+
+/// An example class with a few functions/members
+class ExampleClass {
+	
+	char CharMember;	///< character member
+	
+	/// Default constructor
+	ExampleClass() : CharMember('\0') { }
+	
+	/// Regular constructor.
+	/// Sets CharMember to equal Character
+	ExampleClass(char Character) : CharMember(Character) { }
+}
 
 /// An example function prototype
 /// \param ExampleParam An int * parameter
