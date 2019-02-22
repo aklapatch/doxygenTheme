@@ -9,36 +9,117 @@
 
 /* Doxygen specific themeing -------------------------------------*/
 
-/* project name */
+/* function descriptions */
+.memtitle {
+    padding: 8px;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-bottom: -1px;
+    background-image: url();
+    background-repeat: repeat-x;
+    background-color: #fff;
+    line-height: 1.25;
+    font-weight: 600;
+    float: left;
+}
 
+/* overall style */
+body, table, div, p, dl {
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+/* project name */
 #projectname {
 	/* markdown font */
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	font-weight: 600;
-	margin: 0px;
-	padding: 2px 0px;
+	margin: 0;
+	padding: 2px 0;
 }
 /* title area */
 
 #titlearea {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	width: 100%;
-	border-bottom: 0px solid #5373B4;
+	border-bottom: none;
 }
+
 h2.groupheader {
 	border-bottom: 1px solid #eee;
 	color: #000;
 	font-size: 150%;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	margin-top: 1em;
 	padding-top: 12px;
 	padding-bottom: 4px;
 	width: 100%;
 }
-/* icon for each data type */
 
+/* function description text box */
+.memdoc, dl.reflist dd {
+
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 6px 10px 2px 10px;
+    background-color: #FBFCFD;
+    border-top-width: 0;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 5px 5px 5px;
+    -webkit-border-bottom-left-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+}
+
+/* function prototype text box */
+.memproto, dl.reflist dt {
+
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 6px 0 6px 0;
+    color: #000;
+    font-weight: bold;
+    text-shadow: none;
+    background-color: #fbfbfb;
+    box-shadow: none;
+    border-top-right-radius: 4px;
+    -moz-box-shadow: none;
+    -moz-border-radius-topright: 4px;
+    -webkit-box-shadow: none;
+    -webkit-border-top-right-radius: 4px;
+}
+
+/* function prototype */
+.memname td {
+
+    vertical-align: bottom;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+
+}
+
+
+/* icon for each data type */
 .icon {
 	background-color: #026ea1;
 }
@@ -59,11 +140,17 @@ h2.groupheader {
 }
 /* colors and fonts for description pages */
 
-body, table, div, p, dl {
+table, div, p, dl {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	font-weight: normal;
 	color: black;
 }
+
+.sm li, .sm a {
+    position: relative;
+    color: black;
+}
+
 body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 	font-weight: normal;
@@ -72,21 +159,67 @@ body {
 	overflow-x: hidden;
 	background: #fff;
 }
-/* descriptions for struct attributes */
 
-.mdescLeft, .mdescRight {
-	padding: 0px 8px 4px 8px;
-	color: #262626;
+/* file member function descriptions */
+.memberdecls td, .fieldtable tr {
+
+    -webkit-transition-property: background-color, box-shadow;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-property: background-color, box-shadow;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-property: background-color, box-shadow;
+    -ms-transition-duration: 0.5s;
+    -o-transition-property: background-color, box-shadow;
+    -o-transition-duration: 0.5s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.5s;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+	font-weight: 501;
 }
-/* side nav bar (expands tree window) */
+
+/* function descriptor */
+td.mdescLeft, td.mdescRight {
+	padding: 0 8px 4px 8px;
+	color: #000;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	font-weight: 400;
+}
+
+/* headers for #include descriptions */
+tt, code, kbd, samp {
+    display: inline-block;
+    direction: ltr;
+    background-color: #f8f8f8;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-weight: 550;
+}
+
+/* list items for file members */
+li {
+	font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-weight: 550;
+}
+
+/* links to a class or struct on the class list page */
+a.el {
+		font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    font-weight: 550;
+}
+
+/* header dividers */
+hr {
+    height: 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
 
 #side-nav {
-	padding: 0 0px 0 0;
-	margin: 0px;
+	padding: 0 0 0 0;
+	margin: 0;
 	display: block;
 	position: absolute;
-	left: 0px;
-	width: 250px;
+	left: 0;
+	width: 250;
 }
 /* nav tree arrow symbol */
 
@@ -106,9 +239,9 @@ body {
 #doc-content {
 	overflow: auto;
 	display: block;
-	padding: 0px;
-	margin: 0px;
-	margin-left: 0px;
+	padding: 0;
+	margin: 0;
+	margin-left: 0;
 	-webkit-overflow-scrolling: touch;
 	background-color: #FFF;
 }
@@ -116,32 +249,32 @@ body {
 
 .title {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 150%;
-	margin: -2px 0px 0px 2px;
+	margin: -2px 0 0 2px;
 	background-color: white;
 }
 /* title for each section (class List, Class index) */
 
 #titlearea {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	width: 100%;
-	border-bottom: 0px solid #5373B4;
+	border-bottom: none;
 }
 /* title for each section (class List, Class index) */
 
 div.headertitle {
-	padding: 0px 0px 0px 0px;
+	padding: none;
 	background-color: white;
 }
 /* actual header for each section */
 
 div.header {
-	background-image: url('nav_h.png');
+	background-image: none;
 	background-repeat: repeat-x;
 	background-color: #FFF;
-	margin: 0px;
+	margin: 0;
 	border-bottom: 1px solid #eee;
 }
 /* for class and function lists */
@@ -168,8 +301,8 @@ table.directory {
 /* main page, classes, files banner */
 
 .sm-dox {
-	padding: 0 0px;
-	background-image: url("");
+	padding: 0 0;
+	background-image: none;
 	line-height: 36px;
 	background-color: #FFF;
 }
@@ -182,7 +315,7 @@ table.directory {
 	outline: none;
 	color: #FFF;
 	font-family: 'Lucida Grande', Geneva, Helvetica, Arial, sans-serif;
-	text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.0);
+	text-shadow: none;
 	text-decoration: none;
 }
 .navpath li {
@@ -190,7 +323,7 @@ table.directory {
 	float: left;
 	padding-left: 10px;
 	padding-right: 15px;
-	background-image: url('');
+	background-image: none;
 	background-repeat: no-repeat;
 	background-position: right;
 	color: #364D7C;
@@ -199,10 +332,10 @@ table.directory {
 
 .sm-dox a, .sm-dox a:focus, .sm-dox a:active, .sm-dox a.highlighted {
 	padding-right: 24px;
-	background-image: url("");
+	background-image: none;
 	background-repeat: no-repeat;
 	background-position: right;
-	background-color: #3186e6;
+	background-color: #7fbdff;
 	color: #b8b8b8;
 }
 .sm a {
@@ -210,17 +343,13 @@ table.directory {
 }
 /* top menu, main buttons label */
 
-.sm-dox a:visited {
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
-	color: #283a5d;
-}
-.sm-dox a, .sm-dox a:focus {
+.sm-dox a, .sm-dox a:focus, .sm-dox a:visited, .sm-dox a:visited {
 	font-family: "Lucida Grande", "Geneva", "Helvetica", Arial, sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: bold;
 	line-height: 36px;
-	color: #fff;
-	text-shadow: 0px 0px #000;
+	color: #000;
+	text-shadow: none;
 }
 /* hover over class/main page, files buttons */
 
@@ -233,15 +362,24 @@ table.directory {
 	text-decoration-line: none;
 	text-decoration-style: solid;
 	text-decoration-color: currentcolor;
-	text-shadow: 0 0px 0px #b8b8b8;
+	text-shadow: none;
 	color: #FFF;
 	outline: 0;
 	outline-color: currentcolor;
 	outline-style: none;
-	outline-width: 0px;
+	outline-width: 0;
 	background-color: #156ac9;
-	background-image: url("");
+	background-image: none;
 }
+
+.sm-dox ul a:hover {
+    background-image: none;
+    background-repeat: repeat-x;
+    color: white;
+    background-color: #000;
+    text-shadow: none;
+}
+
 /* top list items */
 
 .sm-dox ul {
@@ -282,12 +420,12 @@ table.directory {
 	box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
 }
 .sm-dox ul a:hover {
-	background-image: url('');
+	background-image: none;
 }
 /* dividers for class/function lists */
 
 div.directory {
-	margin: 10px 0px;
+	margin: 10px 0;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 	width: 100%;
@@ -324,17 +462,17 @@ div.directory {
 /* still for the navtree, but not labels */
 
 #nav-tree {
-	padding: 0px 0px;
+	padding: 0 0;
 	background-color: #404040;
 	font-size: normal;
 	overflow: auto;
-	background-image: url('');
+	background-image: none;
 	margin-right: 5px;
 }
 /* selected nav tree */
 
 #nav-tree .selected {
-	background-image: url('');
+	background-image: none;
 	background-repeat: repeat-x;
 	color: #fff;
 	background-color: #000;
@@ -342,21 +480,21 @@ div.directory {
 /* selected nav tree link */
 
 #nav-tree .selected a {
-	background-image: url('');
+	background-image: none;
 	background-repeat: repeat-x;
 	color: #fff;
 }
 /* visited nav tree link */
 
 #nav-tree .visited a {
-	background-image: url('');
+	background-image: none;
 	background-repeat: repeat-x;
 	color: #127FCF;
 }
 /* bar separator for tree view */
 
 .ui-resizable-e {
-	background-image: url("");
+	background-image: none;
 	background-size: 100%;
 	background-repeat: repeat-y;
 	background-attachment: scroll;
@@ -364,7 +502,7 @@ div.directory {
 	height: 100%;
 	right: 0;
 	top: 0;
-	width: 0px;
+	width: 0;
 	background-color: black;
 }
 /* visited links in general */
@@ -376,16 +514,16 @@ a:visited {
 
 .navpath ul {
 	font-size: 11px;
-	background-image: url('');
+	background-image: none;
 	background-repeat: repeat-x;
 	background-position: 0 -5px;
 	height: 30px;
 	line-height: 30px;
 	color: #fff;
-	border: solid 0px #C2CDE4;
+	border: none;
 	overflow: hidden;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	background-color: #181818;
 }
 /* text 'Generated by doxygen' */
