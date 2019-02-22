@@ -304,7 +304,7 @@ table.directory {
 	padding: 0 0;
 	background-image: none;
 	line-height: 36px;
-	background-color: #FFF;
+	background-color: #7fbdff;
 }
 /* item list on botton left */
 
@@ -467,7 +467,7 @@ div.directory {
 	font-size: normal;
 	overflow: auto;
 	background-image: none;
-	margin-right: 22px;
+	margin-right: 16px;
 }
 
 span.lineno {
