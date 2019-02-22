@@ -467,10 +467,34 @@ div.directory {
 	font-size: normal;
 	overflow: auto;
 	background-image: none;
-	margin-right: 5px;
+	margin-right: 22px;
 }
-/* selected nav tree */
 
+span.lineno {
+	background-color: #f7f7f7;
+}
+
+a {
+	color: #4d95c4;
+}
+
+span.lineno a {
+	background-color: #e6e5e5;
+}
+
+div.fragment {
+    padding: 0 0 1px 0;
+    margin: 4px 8px 4px 2px;
+    background-color: #FBFCFD;
+    border: 1px solid #eee;
+}
+
+.permalink {
+	color: #476092;
+	font-size: 85%;
+}
+
+/* selected nav tree */
 #nav-tree .selected {
 	background-image: none;
 	background-repeat: repeat-x;
@@ -508,9 +532,17 @@ div.directory {
 /* visited links in general */
 
 a:visited {
-	color: #127FCF;
+	color: #4d95c4;
 }
 /* bottom bar */
+
+a.code, a.code:visited, a.line, a.line:visited {
+    color: #4d95c4;
+}
+
+.contents a:visited {
+    color: #4d95c4;
+}
 
 .navpath ul {
 	font-size: 11px;
