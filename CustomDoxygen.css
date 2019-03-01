@@ -1,13 +1,5 @@
 /* rtd theme has a blue of #2980B9
  * grey of #404040 
- * black of #272525
- * White of #e1e4e5
- * Font color of #000000
- * h2 markdown font weight 700, font Roboto Slab, ff-tisa-web-pro, Georgia,Arial
- * p font size 16px, font: Lato, proxima-nova, Helvetica Neue, Arial
- */
-
-/* Doxygen specific themeing -------------------------------------*/
 
 /* function descriptions */
 .memtitle {
@@ -24,6 +16,23 @@
     line-height: 1.25;
     font-weight: 600;
     float: left;
+}
+
+/* parameter data types */
+.paramtype {
+    white-space: nowrap;
+    color: #008141;
+}
+
+/* headers */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+/* parameter names */
+.paramname {
+    color: #db0303;
+    white-space: nowrap;
 }
 
 /* overall style */
