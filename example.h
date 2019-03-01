@@ -1,4 +1,7 @@
 
+/// \mainpage Example Documentation
+/// This page demonstrates this custom doxygen theme. Play around and have a look!
+
 /// \file
 /// This is an example file for this example project.
 

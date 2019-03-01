@@ -1,5 +1,8 @@
-/* rtd theme has a blue of #2980B9
- * grey of #404040 
+
+/* function return types */
+.memItemLeft {
+	color: green;
+}
 
 /* function descriptions */
 .memtitle {
@@ -21,7 +24,7 @@
 /* parameter data types */
 .paramtype {
     white-space: nowrap;
-    color: #008141;
+    color: green;
 }
 
 /* headers */
@@ -31,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* parameter names */
 .paramname {
-    color: #db0303;
+    color: red;
     white-space: nowrap;
 }
 
