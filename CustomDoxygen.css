@@ -20,6 +20,10 @@ dt {
     font-weight: 600;
 }
 
+p.reference, p.definition {
+    font: 400 14px/22px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;;
+}
+
 /* parameter names */
 .params .paramname, .retval .paramname, .tparams .paramname {
     font-weight: 600;
@@ -347,14 +351,20 @@ table.directory {
 }
 /* top menu, Classes button */
 
-.sm-dox a, .sm-dox a:focus, .sm-dox a:active, .sm-dox a.highlighted {
-	padding-right: 24px;
+.sm-dox a, .sm-dox a:focus, .sm-dox a:active, .sm-dox a.highlighted, .sm-dox a.highlighted {
+	padding-right: 12px;
 	background-image: none;
 	background-repeat: no-repeat;
 	background-position: right;
 	background-color: #7fbdff;
 	color: #b8b8b8;
+	padding-left: 12px;
 }
+
+.sm-dox a.has-submenu {
+    padding-right: 24px;
+}
+
 .sm a {
 	display: block;
 }
