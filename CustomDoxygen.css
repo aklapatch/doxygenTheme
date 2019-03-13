@@ -1,9 +1,4 @@
 
-/* function return types */
-.memItemLeft {
-	color: green;
-}
-
 /* function descriptions */
 .memtitle {
     padding: 8px;
@@ -21,10 +16,20 @@
     float: left;
 }
 
+dt {
+    font-weight: 600;
+}
+
+/* parameter names */
+.params .paramname, .retval .paramname, .tparams .paramname {
+    font-weight: 600;
+    vertical-align: top;
+}
+
 /* parameter data types */
 .paramtype {
     white-space: nowrap;
-    color: green;
+    color: #008141;
 }
 
 /* headers */
@@ -34,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* parameter names */
 .paramname {
-    color: red;
+    color: #db0303;
     white-space: nowrap;
 }
 
