@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "example.h", "example_8h.html", "example_8h" ]
+    [ "example.h", "df/d24/example_8h.html", "df/d24/example_8h" ]
 ];

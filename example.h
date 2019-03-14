@@ -27,7 +27,7 @@ class ExampleClass {
 	/// Regular constructor.
 	/// Sets CharMember to equal Character
 	ExampleClass(char Character) : CharMember(Character) { }
-}
+};
 
 /// An example function prototype
 /// \param ExampleParam An int * parameter

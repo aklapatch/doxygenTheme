@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "cdei",
+  0: "dei",
   1: "e",
   2: "e",
   3: "e",
-  4: "cdi",
+  4: "di",
   5: "e"
 };
 
@@ -21,7 +21,7 @@ var indexSectionNames =
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
+  1: "Data Structures",
   2: "Files",
   3: "Functions",
   4: "Variables",

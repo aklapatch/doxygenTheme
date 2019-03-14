@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['exampleclass',['ExampleClass',['../example_8h.html#a57f065d6bffcf548b0791eb637d19a7d',1,'ExampleClass():&#160;example.h'],['../example_8h.html#a7aeb3c467a68c78742717aa701bf7ab0',1,'ExampleClass(char Character):&#160;example.h']]],
-  ['examplefunction',['exampleFunction',['../example_8h.html#a7f4edaa7fa82df1e4195bf3cfb26ca6d',1,'example.h']]],
-  ['examplestruct',['ExampleStruct',['../structExampleStruct.html#a2eaf85f7b07417d446786d7c8cd2079b',1,'ExampleStruct']]]
+  ['examplefunction',['exampleFunction',['../df/d24/example_8h.html#acaf359c717cc467d6c88ccca62e99ccb',1,'example.h']]],
+  ['examplestruct',['ExampleStruct',['../d0/d04/structExampleStruct.html#a2eaf85f7b07417d446786d7c8cd2079b',1,'ExampleStruct']]]
 ];

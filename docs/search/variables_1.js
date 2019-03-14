@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doublemember',['DoubleMember',['../structExampleStruct.html#af89772eb3f594cb0f4a4a2b701952cf4',1,'ExampleStruct']]]
+  ['intmember',['IntMember',['../d0/d04/structExampleStruct.html#ad6601d42f2ad436f1d914a68a796521c',1,'ExampleStruct']]]
 ];

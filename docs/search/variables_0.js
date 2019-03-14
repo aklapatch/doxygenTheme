@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['charmember',['CharMember',['../example_8h.html#a7cc314ed307d94be65fc87f99e96a081',1,'example.h']]]
+  ['doublemember',['DoubleMember',['../d0/d04/structExampleStruct.html#af89772eb3f594cb0f4a4a2b701952cf4',1,'ExampleStruct']]]
 ];
